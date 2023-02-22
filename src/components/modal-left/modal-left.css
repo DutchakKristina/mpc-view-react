@@ -6,6 +6,7 @@
     left: 0;
     z-index: 999;
     transition: .7s;
+    display: none;
 }
 .modal_window .modal_flex{
     width: 100%;

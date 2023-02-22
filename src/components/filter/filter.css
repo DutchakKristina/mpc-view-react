@@ -1,7 +1,3 @@
-/* filter style */
-  .filter.filter_wrapper{
-    margin-top: 30px;
-  }
   .filter .filter_inner{
     padding: 15px;
     background: #FFFFFF;
@@ -16,4 +12,62 @@
     display: flex;
     align-items: center;
     column-gap: 30px;
+    flex-shrink: 0;
+  }
+  .filter .search_wrapper{
+    max-width: 270px;
+    width: 100%;
+  }
+  .filter .filters_buttons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  @media(max-width:1440px){
+    .filter .filter_inner{
+      flex-direction: column;
+      align-items: start;
+      gap: 15px;
+    }
+    .filter .search_wrapper{
+      max-width: 100%;
+    }
+    .filter .filters_wrapper{
+      width: 100%;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #D4DBF1;
+    }
+  }
+  @media(max-width: 1199px){
+    .filter .filters_wrapper{
+      flex-wrap: wrap;
+      row-gap: 15px;
+    }
+
+    .filter .filters_buttons{
+      width: 100%;
+      justify-content: center;
+      gap: 50px;
+    }
+    .filter_title{
+      width: 100%;
+    }
+    .filter .select_wrapper{
+      width: calc(33.3% - 20px);
+    }
+    .filter .select_wrapper .select{
+      width: 100%;
+    }
+  }
+  @media(max-width: 991px){
+    .filter .filters_wrapper{
+      flex-direction: column;
+      align-items: start;
+    }
+    .filter .select_wrapper{
+      flex-direction: column;
+      align-items: start;
+      width: 100%;
+    }
+
   }

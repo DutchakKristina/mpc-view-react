@@ -21,7 +21,11 @@ a{
 main{
   padding: 40px 30px;
 }
-
+::placeholder{
+  font-family: var(--font);
+  font-size: 14px;
+  color: #777777;
+}
 .page_title{
     color: #808AAB;
     font-size: 30px;
@@ -53,4 +57,30 @@ main{
 }
 .status.inactive .status_icon{
   background: #E52900;
+}
+.modal_close{
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: #D4DBF1;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  transition: 0.2s;
+}
+.modal_close:hover{
+ background-color: #008BC6;
+}
+.modal_close img{
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+@media(max-width: 991px){
+  main{
+    padding: 20px;
+  }
 }

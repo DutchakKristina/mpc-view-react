@@ -8,6 +8,8 @@
     appearance: none;
     position: relative;
     width: 100%;
+    font-size: 14px;
+    font-weight: 700;
 }
 .select_wrapper select:focus{
     outline: 1px solid var(--main_color);

@@ -2,10 +2,14 @@ import React from "react";
 import Button from "../components/field-components/button/button";
 import Header from "../components/header/header";
 import Filter from "../components/filter/filter";
-import mainButtonIcon from '../images/icon_plus.svg';
-import ProjectTable from "../components/table-components/project-table/project-table";
-import '../custom-css/home.css';
 import ModalLeft from "../components/modal-left/modal-left";
+import ModalNewCustomer from "../components/modal-new-customer/modal-new-customer";
+import ProjectTable from "../components/table-components/project-table/project-table";
+
+
+import mainButtonIcon from '../images/icon_plus.svg';
+import '../custom-css/home.css';
+
 const ProjectPage = () => {
     return (
         <div>
@@ -27,6 +31,7 @@ const ProjectPage = () => {
                     <ProjectTable/>
                 </section>
                 <ModalLeft/>
+                <ModalNewCustomer />
             </main>
         </div>
 

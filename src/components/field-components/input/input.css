@@ -8,6 +8,7 @@
     background: #D4DBF1;
     border: 1px solid #A2B2E2;
     border-radius: 10px;
+    padding: 0 15px;
 }
 .input_box {
     display: flex;

@@ -6,12 +6,12 @@ const styled = {
     left : "left",
     top : "top"
 }
-const Input = ({position = 'top', label}) => {
+const Input = ({position = 'top', label, placeholder}) => {
     return(
         <div className={classNames("input_box", styled[position])}>
            
             <label>{label}</label>
-            <div className="input_wrap"><input type="text"/></div>
+            <div className="input_wrap"><input type="text" placeholder={placeholder}/></div>
         </div>
     )
 }

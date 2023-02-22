@@ -10,16 +10,22 @@ import './filter.css';
 const Filter = () => {
     return (
         <div className="filter_wrapper filter">
-            <div className="filter_inner">
-                <div className="filters_wrapper">
+            <div className="filter_inner flex">
+                <div className="filters_wrapper flex">
                     <h4 className="filter_title">Sort by</h4>
-                    <Select type="labelLeft" label="Country:"></Select>
+                    <Select type="labelLeft" label="Country:">
+                       <option>skdfsldgkfs</option>
+                       <option>skdfsldgkfs</option>
+                       <option>skdfsldgkfs</option>
+                    </Select>
                     <Select type="labelLeft" label="Customer:" />
                     <Select size="small" type="labelLeft" label="Status:" />
-                    <ButtonReset/>
-                    <Button type="simple">
-                        Apply
-                    </Button>
+                    <div className="filters_buttons">
+                        <ButtonReset />
+                        <Button type="simple">
+                            Apply
+                        </Button>
+                    </div>
                 </div>
                 <Search />
             </div>

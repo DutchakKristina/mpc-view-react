@@ -10,7 +10,7 @@ const styled = {
 }
 const Button = ( {children, type = 'primary'} ) => {
     return (
-        <button className={classnames("main_button", styled[type])}>{ children }</button>
+        <button className={classnames("main_button", styled[type])}>{children}</button>
     )
 }
 Button.propTypes = {

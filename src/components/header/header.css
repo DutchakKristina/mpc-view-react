@@ -56,7 +56,7 @@ header .user_name_wrap{
     display: flex;
     align-items: center;
     position: relative;
-    padding-right: 15px;
+    padding-right: 25px;
     cursor: pointer;
 }
 header .user_wrapper{
