@@ -1,0 +1,29 @@
+.search_wrapper {
+    position: relative;
+}
+.search_wrapper input {
+    background: #D4DBF1;
+    border: 1px solid #A2B2E2;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0 15px;
+    margin: 0;
+    min-width: 270px;
+    box-sizing: border-box;
+}
+.search_wrapper .search_icon {
+    position: absolute;
+    right: 15px;
+    top: 55%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+.search_wrapper .search_icon img {
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+    transition: 0.2s;
+}
+.search_wrapper .search_icon:hover img{
+    transform: scale(1.1);
+}

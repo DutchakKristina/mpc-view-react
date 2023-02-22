@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+
+*::after, 
+*::before{
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+body{
+  font-size: 14px;
+  background-color: #F2F7FE;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+main{
+  padding: 40px 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page_title{
+    color: #808AAB;
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.filter_title{
+    margin: 0;
+    font: 400 14px/1.1 var(--font);
+    text-transform: uppercase;
+    color: #031240;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.status{
+  margin: 0;
+  position: relative;
+  padding-left: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.status .status_icon{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status.active .status_icon{
+   background: #00CA14;
+}
+.status.inactive .status_icon{
+  background: #E52900;
 }

@@ -1,0 +1,36 @@
+.row_wrapper .single-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 70px;
+    position: relative;
+    
+}
+.single-row:not(:last-child){
+    border-bottom: 1px solid #D4DBF1;
+}
+.single-row a{
+    color: #008BC6;
+    font-weight: 700;
+    text-decoration: none;
+}
+.single-row .edit_row{
+    position: absolute;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.single-row .delete_row{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 20px;
+    cursor: pointer;
+}
+.row_wrapper .cell:not(:first-child){
+    width: 22%;
+}
+.row_wrapper  .cell:first-child{
+    width: 34%;
+}
