@@ -79,3 +79,40 @@ header .name_icon{
 header .name_icon svg{
     transform: rotate(180deg);
 }
+header .mobile_menu{
+    display: none;
+    cursor: pointer;
+    height: 12px;
+    margin-left: 15px;
+    width: 31px;
+}
+header .iconAnime{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+header .iconAnime span{
+    height: 3px;
+    width: 100%;
+    background: #48FFA8;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+}
+header .iconAnime span:last-child {
+    width: 21px;
+    bottom: 0;
+}
+@media(max-width: 1299px){
+    header .user_wrapper{
+        display: none;
+    }
+    header .menu_wrapper{
+        display: none;
+    }
+    header .mobile_menu{
+        display: block;
+    }
+    
+}

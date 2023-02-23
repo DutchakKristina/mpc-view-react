@@ -21,8 +21,8 @@ const SingleRow = (props) => {
                     <span className="status_icon"></span>
                 </p>
             </div>
-            <div className="edit_row"><img src={EditRow} alt="edit row" /></div>
-            <div className="delete_row"><img src={DeleteRow} alt="delete row" /></div>
+            <div className="change_row edit_row"><img src={EditRow} alt="edit row" /></div>
+            <div className="change_row delete_row"><img src={DeleteRow} alt="delete row" /></div>
         </div>
     )
 }

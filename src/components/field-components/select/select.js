@@ -14,14 +14,14 @@ const styled = {
     large : "large"
 }
 
-const Select = ({size = 'regular', label ,children, type = 'labelTop'}) => {
+const Select = ({size = 'regular', label, children, type = 'labelTop'}) => {
    
     return(
         <div className = {classNames("select_wrapper", styled[type])}>
-            <label>{label}</label>
+                <label>{label}</label>
             <div className={classNames("select", styled[size])}>
                 <select>
-                    <option>All </option>
+                    <option>All</option>
                 </select>
                 <img src={selectArrow} alt="arrow" className="select_arrow"/>
             </div>

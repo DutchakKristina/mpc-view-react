@@ -7,7 +7,7 @@ import user_arrow from '../../images/white_arrow.svg';
 import MenuItem from "./menu-item";
 
 
-const Header = () => {   
+const Header = () => {
     return (
         <header>
             <div className="container">
@@ -25,9 +25,15 @@ const Header = () => {
                         <div className="user_name_wrap">
                             <h3 className="user_name">John Smith</h3>
                             <span className="name_icon">
-                              <img src={user_arrow} alt="arrow down"/>
+                                <img src={user_arrow} alt="arrow down" />
                             </span>
                         </div>
+                    </div>
+                </div>
+                <div className="mobile_menu">
+                    <div className="iconAnime">
+                        <span className="bar-1"> </span>
+                        <span className="bar-2"> </span>
                     </div>
                 </div>
             </div>

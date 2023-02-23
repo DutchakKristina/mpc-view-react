@@ -2,4 +2,21 @@
     color: #008BC6;
     font-weight: 700;
     cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 3px;
+    position: relative;
+  }
+  .reset_filter .reset::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: -100%;
+    bottom: 0;
+    background: #008BC6;
+    transition: .2s;
+  }
+  .reset_filter .reset:hover::after{
+    left: 0;
   }

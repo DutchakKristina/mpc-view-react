@@ -3,16 +3,17 @@ import Button from "../components/field-components/button/button";
 import Header from "../components/header/header";
 import Filter from "../components/filter/filter";
 import ModalLeft from "../components/modal-left/modal-left";
-import ModalNewCustomer from "../components/modal-new-customer/modal-new-customer";
+
 import ProjectTable from "../components/table-components/project-table/project-table";
 
 
 import mainButtonIcon from '../images/icon_plus.svg';
 import '../custom-css/home.css';
+import ModalCenter from "../components/modal-center/modal-cemter";
 
 const ProjectPage = () => {
     return (
-        <div>
+        <>
             <Header />
             <main>
                 <section className="section_title">
@@ -30,10 +31,11 @@ const ProjectPage = () => {
                 <section className="section_table">
                     <ProjectTable/>
                 </section>
-                <ModalLeft/>
-                <ModalNewCustomer />
+                <ModalLeft />
+                <ModalCenter ></ModalCenter>
+                
             </main>
-        </div>
+        </>
 
 
     )

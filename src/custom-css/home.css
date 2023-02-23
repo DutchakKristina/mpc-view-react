@@ -9,3 +9,15 @@
 .section_filter{
     margin-top: 30px;
 }
+
+@media(max-width: 767px){
+    .title_container{
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .section_filter{
+        margin-top: 20px;
+    }
+}

@@ -32,7 +32,13 @@ const ProjectTable = () => {
                    <SingleRow />
                 </div>
             </div>
-           <Pagination/>
+            <div className="table_bottom">
+                <Pagination/>
+                <div className="num_of_proj">
+                    <p className="num_of_proj_text">Showing <span className="from_number">10</span> to <span className="to_number">19</span> of <span className="total_number">112</span>entries</p>
+                </div>
+            </div>
+           
         </div>
     )
 }

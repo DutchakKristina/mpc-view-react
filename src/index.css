@@ -1,7 +1,4 @@
-:root{
-  --font: 'Inter', sans-serif;
-  --main_color: #031240;
-}
+
 body {
   margin: 0;
   font-family: var(--font);

@@ -1,6 +1,3 @@
-.pagination_wrapper{
-    margin-top: 25px;
-}
 .pagination {
     display: flex;
     align-items: center;
@@ -30,10 +27,17 @@
 }
 .pagination li img{
     width: 14px;
+    transition: .2s;
 }
-.pagination li:first-child img{
+.pagination .arrow_pag:first-child img{
     transform: rotate(90deg)
 }
-.pagination li:last-child img{
+.pagination .arrow_pag:last-child img{
     transform: rotate(-90deg)
+}
+.pagination .arrow_pag:hover{
+    background: var(--main_color);
+}
+.pagination .arrow_pag:hover img{
+    filter: brightness(0) invert(1);
 }

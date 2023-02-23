@@ -4,16 +4,17 @@ import Input from "../field-components/input/input";
 import Select from "../field-components/select/select";
 import Textarea from "../field-components/textarea/textarea";
 
+import SaveIcon from "../../images/save_icon.svg";
 import iconCloseModal from '../../images/icon_close_modal.svg';
-import './modal-new-customer.css';
+import './modal-center.css';
 
 
-const ModalNewCustomer = ( props ) => {
+const ModalCenter = ( props ) => {
     if(!props.show){
-        return null
+        return null 
     }
     return(
-        <div className="modal_customer">
+        <div className="modal_center">
             <div className="modal_flex">
                 <div className="modal_inner">
                     <div className="modal_close">
@@ -29,6 +30,7 @@ const ModalNewCustomer = ( props ) => {
                     </div>
                     <Button>
                         Add Customer
+                        <img src={SaveIcon} alt="save"/>
                     </Button>
                 </div>
             </div>
@@ -36,4 +38,4 @@ const ModalNewCustomer = ( props ) => {
     )
 }
 
-export default ModalNewCustomer;
+export default ModalCenter;
