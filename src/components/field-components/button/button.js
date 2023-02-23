@@ -8,13 +8,21 @@ const styled = {
     primary: "primary",
     simple : "simple"
 }
-const Button = ( {children, type = 'primary'} ) => {
+const Button = ( {children, type = 'primary', handler, preventDefault= true} ) => {
+    const buttonClick = (e) => {
+        if(preventDefault){
+            e.preventDefault();
+        }
+        handler(e);
+    }
     return (
-        <button className={classnames("main_button", styled[type])}>{children}</button>
+        <button onClick={buttonClick} className={classnames("main_button", styled[type])}>{children}</button>
     )
 }
 Button.propTypes = {
     type: PropTypes.oneOf(['primary', 'simple']),
+    handler: PropTypes.func,
+    preventDefault: PropTypes.bool
 }
 
 export default Button; 

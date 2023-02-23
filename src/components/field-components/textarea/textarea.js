@@ -1,5 +1,8 @@
 import React from "react";
-import "./textarea.css"
+import PropTypes from 'prop-types';
+
+import "./textarea.css";
+
 
 const Textarea = ({label, placeholder}) => {
     return (
@@ -11,5 +14,9 @@ const Textarea = ({label, placeholder}) => {
         </div>
     )
 }
-
+Textarea.propTypes = {
+    label: PropTypes.oneOfType([ PropTypes.string]),
+    placeholder: PropTypes.oneOfType([ PropTypes.string])
+    
+}
 export default Textarea;

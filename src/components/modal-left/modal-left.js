@@ -2,10 +2,12 @@ import React from "react";
 import Input from "../field-components/input/input";
 import Select from "../field-components/select/select";
 import Button from "../field-components/button/button";
+// import { useState } from "react";
 
 import SaveIcon from "../../images/save_icon.svg";
 import iconCloseModal from '../../images/icon_close_modal.svg';
 import './modal-left.css';
+
 
 const ModalLeft = ( props ) => {
     if(!props.show){

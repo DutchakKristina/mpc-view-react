@@ -3,31 +3,30 @@ import React from "react";
 import classNames from "classnames";
 import PropTypes from 'prop-types';
 import { useState } from "react";
-
+ 
 import './select.css';
 import selectArrow from '../../../images/arrow_down.svg';
 
 
-const styled = {
-    labelTop: "labelTop",
-    labelLeft : "labelLeft",
+const selectStyle = {
     regular : "regular",
     small : "small",
     large : "large"
 }
+const labelStyled = {
+    top: "top",
+    left : "left"
+}
 
-const optionsArr = ['All', 'Test1', 'Test2'];
 
-const Select = ({size = 'regular', label, type = 'labelTop'}) => {
-   const[options, setOptions] = useState(optionsArr);
-  
+const Select = ({size = 'regular', label, type = 'top', options=[], selectedValue=null}) => {  
     return(
-        <div className = {classNames("select_wrapper", styled[type])}>
-                <label>{label}</label>
-            <div className={classNames("select", styled[size])}>
+        <div className = {classNames("select_wrapper", labelStyled[type])}>
+            <label>{label}</label>
+            <div className={classNames("select", selectStyle[size])}>
                 <select>
-                    {options.map((option, index ) => (
-                        <option key={index}>{option}</option>
+                    {options.map(({value, id }) => (
+                        <option selected={selectedValue === value} key={id}>{value}</option>
                     ))}                    
                 </select>
                 <img src={selectArrow} alt="arrow" className="select_arrow"/>
@@ -36,6 +35,7 @@ const Select = ({size = 'regular', label, type = 'labelTop'}) => {
     )
 }
 Select.propTypes = {
-    type: PropTypes.oneOf(['labelTop', 'labelLeft', 'small', 'regular', 'large']),
+    type: PropTypes.oneOf(['top', 'left', 'small', 'regular', 'large']),
+    selectedValue: PropTypes.oneOfType([ PropTypes.string, PropTypes.number])
 }
 export default Select;

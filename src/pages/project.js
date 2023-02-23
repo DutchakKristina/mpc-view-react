@@ -34,7 +34,7 @@ const ProjectPage = () => {
                 <section className="section_table">
                     <ProjectTable/>
                 </section>
-                <ModalLeft />
+                <ModalLeft show/>
                 <ModalCenter title='Add new Customer'>
                     <>
                     <div className="modal_fields">
@@ -44,7 +44,7 @@ const ProjectPage = () => {
                         <Select label="Country:" size= "large"></Select>
                         <Select label="Customer’s status" size= "large"></Select>
                     </div>
-                    <Button>
+                    <Button handler={()=> {console.log(56789)}}>
                         Add Customer
                         <img src={SaveIcon} alt="save"/>
                     </Button>
