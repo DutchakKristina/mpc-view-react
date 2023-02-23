@@ -1,11 +1,13 @@
 import React from "react";
-import './header.css';
-import logo from '../../images/logo.svg';
-
-import test_user from '../../images/user_logo.jpg';
-import user_arrow from '../../images/white_arrow.svg';
 import MenuItem from "./menu-item";
 
+import logo from '../../images/logo.svg';
+import test_user from '../../images/user_logo.jpg';
+import user_arrow from '../../images/white_arrow.svg';
+import user_settings from '../../images/icon_user_settings.svg';
+import user_logout from '../../images/icon_user_logout.svg';
+
+import './header.css';
 
 const Header = () => {
     return (
@@ -27,6 +29,20 @@ const Header = () => {
                             <span className="name_icon">
                                 <img src={user_arrow} alt="arrow down" />
                             </span>
+                        </div>
+                        <div className="user_settings">
+                            <a href="#s" className="user_settings_link">
+                                <span className="user_settings_icon">
+                                    <img src={user_settings} alt="user settings icon"></img>
+                                </span>
+                                <span className="user_settings_title">Settings</span>
+                            </a>
+                            <a href="#s" className="user_settings_link">
+                                <span className="user_settings_icon">
+                                    <img src={user_logout} alt="user settings logout"></img>
+                                </span>
+                                <span className="user_settings_title">Logout</span>
+                            </a>
                         </div>
                     </div>
                 </div>

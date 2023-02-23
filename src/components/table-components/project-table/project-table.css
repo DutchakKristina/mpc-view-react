@@ -7,6 +7,7 @@
 .table .table_header{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .table .table_header .cell{
     text-transform: uppercase;
@@ -20,11 +21,7 @@
     width: 34%;
 }
 .table .row_wrapper{    
-    background: #FFFFFF;
-    border: 1px solid #D4DBF1;
-    border-top: none;
-    border-radius: 0 0px 10px 10px;
-    overflow: hidden;
+    background: #FFFFFF;   
 }
 .table .table_bottom{
     margin-top: 25px;
@@ -35,4 +32,26 @@
 .table .table_bottom p{
     color: #808AAB;
     font-size: 14px;
+}
+.table .table-wrapper{
+    overflow: auto;
+    border: 1px solid #D4DBF1;
+    border-radius: 10px;
+}
+.table_inner_wrap{
+    min-width: 900px;
+}
+
+@media(max-width: 767px){
+    .table .table_header_wrap{
+        padding: 15px 50px;
+    }
+    .table .table_header{
+        gap: 15px;
+    }
+    .table .table_bottom{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        gap: 20px;
+    }
 }

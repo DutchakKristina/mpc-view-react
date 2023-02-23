@@ -58,17 +58,24 @@ header .user_name_wrap{
     position: relative;
     padding-right: 25px;
     cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+header .user_name_wrap:hover{
+    opacity: 1;
 }
 header .user_wrapper{
     display: flex; 
     align-items: center;
     column-gap: 15px;
+    position: relative;
+    z-index: 5;
 }
 header .user_wrapper h3{
     color: #F2F7FE;
     font-weight: 400;
     font-size: 14px;
-    margin: 0;
+    margin: 0;   
 }
 header .name_icon{
     position: absolute;
@@ -103,6 +110,35 @@ header .iconAnime span{
 header .iconAnime span:last-child {
     width: 21px;
     bottom: 0;
+}
+header .user_settings{
+    display: none;
+    position: absolute;
+    width: calc(100% - 40px);
+    background: var(--main_color);
+    padding: 10px;
+    padding-top: 20px;
+    top: calc(100% - 10px);
+    right: -30px;
+    border-radius: 0 0 10px 10px;
+    z-index: -1;
+    min-width: 160px;
+}
+header .user_settings_link{
+    padding: 10px 0;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 400;
+    display: block;
+    transition: 0.2s;
+}
+header .user_settings_link:hover{
+    opacity: 1;
+}
+header .user_settings_icon img{
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
 }
 @media(max-width: 1299px){
     header .user_wrapper{

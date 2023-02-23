@@ -36,3 +36,6 @@
 .modal_center .main_button{
     margin: 0 auto;
 }
+.modal_center select{
+    font-weight: 400;
+}
