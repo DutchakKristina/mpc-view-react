@@ -1,9 +1,9 @@
 import './App.css';
-import FrontPage from './pages/project';
+import ProjectPage from './pages/project';
 
 function App() {
   return (
-    <FrontPage/>
+    <ProjectPage/>
   );
 }
 

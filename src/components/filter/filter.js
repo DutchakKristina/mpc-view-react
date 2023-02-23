@@ -13,9 +13,9 @@ const Filter = () => {
             <div className="filter_inner flex">
                 <div className="filters_wrapper flex">
                     <h4 className="filter_title">Sort by</h4>
-                    <Select type="labelLeft" label="Country:" options={[{value: 'test', id: 4}, 'test2']} value='test'></Select>
-                    <Select type="labelLeft" label="Customer:" />
-                    <Select size="small" type="labelLeft" label="Status:" />
+                    <Select type="left" label="Country:" options={[{value: 'test', id: 4}, 'test2']} value='test'></Select>
+                    <Select type="left" label="Customer:" />
+                    <Select size="small" type="left" label="Status:" />
                     <div className="filters_buttons">
                         <ButtonReset />
                         <Button type="simple">
