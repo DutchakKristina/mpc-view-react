@@ -36,36 +36,12 @@
     font-weight: 700;
     margin: 0;
 }
-.modal_window .flex_field{
-    display: flex;
-    gap: 25px 15px;
-    flex-wrap: wrap;
-    padding: 20px 0;
-    border-bottom: 1px solid  #D4DBF1;
-}
-.modal_window .flex_field > div{
-    width: calc(50% - 8px);
-}
-.modal_window .new_user_projects{
-    padding: 20px 0;    
-}
-.modal_window .user_projects_wrap{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
 .modal_window .main_button{
     margin: auto;
 }
-.modal_window .user_project_inner{
-    display: flex;
-    align-items: flex-end;
-    gap: 15px;
-}
-.modal_window .select_wrapper{
-    width: calc(100% - 65px);
-}
-.modal_window .select_wrapper select{
-    font-weight: 400;
+@media(max-width: 991px){
+    .modal_window .modal_inner{
+        width: 100%;
+        padding: 15px;
+    }
 }

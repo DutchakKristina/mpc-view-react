@@ -13,6 +13,7 @@
   --main_color: #031240;
   --active_color: #48FFA8;
   --title_color: #808AAB;
+  --second_color: #008BC6;
 }
 body{
   font-size: 14px;
@@ -145,6 +146,18 @@ h3{
   display: none;
 }
 /* end modal edit row button  */
+.filters_buttons{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media(max-width: 1199px){
+  .filters_buttons{
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+  }
+}
 @media(max-width: 991px){
   main{
     padding: 20px;

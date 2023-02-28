@@ -1,10 +1,25 @@
-.new_user_form{
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+.new-user-form .flex_wrap{
+    display: flex;  
+    gap: 20px 15px;
+    flex-wrap: wrap;    
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
-.new_user_form .new_user_fields{
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+.new-user-form .flex_wrap > div{
+    width: calc(50% - 8px);
+}
+.new-user-form .flex_wrap div:first-child{
+    width: 100%;
+}
+@media(max-width: 600px){
+    .new-user-form .flex_wrap > div{
+        width: 100%;
+    }
+    .new-user-form .flex_wrap{
+        margin: 20px 0;
+    }
+    .new-user-form .flex_wrap{
+        gap: 15px;
+    }
 }

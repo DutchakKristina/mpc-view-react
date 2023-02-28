@@ -18,11 +18,6 @@
     max-width: 270px;
     width: 100%;
   }
-  .filter .filters_buttons{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
   @media(max-width:1440px){
     .filter .filter_inner{
       flex-direction: column;
@@ -44,11 +39,6 @@
       row-gap: 15px;
     }
 
-    .filter .filters_buttons{
-      width: 100%;
-      justify-content: center;
-      gap: 50px;
-    }
     .filter_title{
       width: 100%;
     }

@@ -1,8 +1,4 @@
 import React from "react";
-// import Button from "../field-components/button/button";
-// import Input from "../field-components/input/input";
-// import Select from "../field-components/select/select";
-// import Textarea from "../field-components/textarea/textarea";
 
 
 import iconCloseModal from '../../images/icon_close_modal.svg';

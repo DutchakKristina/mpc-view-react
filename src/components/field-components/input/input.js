@@ -7,16 +7,19 @@ const styled = {
     left: "left",
     top: "top"
 }
-const Input = ({ position = 'top', label, placeholder }) => {
+const Input = ({ position = 'top', label, placeholder, type }) => {
     return (
         <div className={classNames("input_box", styled[position])}>
             <label>{label}</label>
-            <div className="input_wrap"><input type="text" placeholder={placeholder} /></div>
+            <div className="input_wrap"><input type={type} placeholder={placeholder} /></div>
         </div>
     )
 }
 Input.propTypes = {
-    type: PropTypes.oneOf(['left', 'top']),
+    position: PropTypes.oneOf(['left', 'top']),
+    label : PropTypes.string,
+    placeholder: PropTypes.string,
+    type: PropTypes.oneOf(['text', 'email', 'password']).isRequired
 }
 
 export default Input;

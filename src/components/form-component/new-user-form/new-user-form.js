@@ -1,30 +1,31 @@
 import React from "react";
-
-import Input from "../../../components/field-components/input/input";
-import Textarea from "../../../components/field-components/textarea/textarea";
-import Select from "../../../components/field-components/select/select";
-
-import SaveIcon from "../../../images/save_icon.svg";
 import Button from "../../field-components/button/button";
+import DatePicker from "../../field-components/date-picker/date-picker";
+import Input from "../../field-components/input/input";
+import Select from "../../field-components/select/select";
 
-import './new-user-form.css';
 
-const UserForm = () => {
+import ButtonIcon from '../../../images/save_icon.svg'
+import './new-user-form.css'
+const NewUserForm = () => {
     return(
-        <div className="new_user_form">
-            <div className="new_user_fields">
-                <Input label="Customers company name:" placeholder="Company name"></Input>
-                <Input label="Customers contact:" placeholder="Contact Information"></Input>
-                <Textarea label="Short company description:" placeholder="Short description"></Textarea>
-                <Select label="Country:" size= "large" options={[ {value: 'None', id: 4}, {value: 'test', id: 4}]} value='none'></Select>
-                <Select label="Customer’s status" size= "large" options={[{value: 'test', id: 4}, 'test2']} value='none'></Select>
+        <div className="new-user-form">
+            <div className="flex_wrap">
+                <Input placeholder="John Smith" label="User name:" type="text"></Input>
+                <Input type="email" placeholder="Jjohn.smith@example.com" label="Email address:"/>
+                <Input type="text" placeholder="+441234567890" label="Phone number:"/>
+                <Select size = "large" label="User type:" selectedValue="Unassignet" options={[{value: 'Unassignet', id: "4"},{value:"None", id:"4"}]}></Select>
+                <Select size = "large" label ="Customer:" selectedValue="None" options={[{value: 'None', id: "4"},{value:"Some", id:"4"}]}></Select>
+                <Input type="password" label="Password:"/>
+                <DatePicker label="Expiration date:"/>
             </div>
-            <Button handler={()=> {console.log(56789)}}>
-                Add Customer
-                <img src={SaveIcon} alt="save"/>
+            <Button>
+                Add User
+                <img src={ButtonIcon} alt="save icon"/>
             </Button>
         </div>
     )
 }
 
-export default UserForm;
+
+export default NewUserForm;

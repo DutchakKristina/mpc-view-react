@@ -9,7 +9,10 @@ import mainButtonIcon from '../images/icon_plus.svg';
 import '../custom-css/home.css';
 import ModalCenter from "../components/modal-center/modal-center";
 import NewProject from "../components/form-component/new-project-form/new-project-form";
-import UserForm from "../components/form-component/new-user-form/new-user-form";
+import UserForm from "../components/form-component/new-customer-form/new-customer-form";
+import NewUserForm from "../components/form-component/new-user-form/new-user-form";
+import Select from "../components/field-components/select/select";
+import ButtonReset from "../components/field-components/button-reset/button-reset";
 
 const ProjectPage = () => {
     return (
@@ -24,7 +27,17 @@ const ProjectPage = () => {
                 </div>
             </section>
             <section className="section_filter">
-                <Filter/>
+                <Filter>
+                    <Select type="left" label="Country:" options={[{value: 'All', id: 4}, {value: 'test2', id: 1}]} selectedValue='All'></Select>
+                    <Select type="left" label="Customer:" options={[{value: 'All', id: 3}, {value: 'test2', id: 5}]} selectedValue='All'/>
+                    <Select size="small" type="left" label="Status:" options={[{value: 'All', id: 8}, {value: 'test2', id: 9}]} selectedValue='All'/>
+                    <div className="filters_buttons">
+                        <ButtonReset />
+                        <Button type="simple">
+                            Apply
+                        </Button>
+                    </div>
+                </Filter>
             </section>
             <section className="section_table">
                 <ProjectTable/>
@@ -32,9 +45,12 @@ const ProjectPage = () => {
             <ModalLeft title = "Add new Project">
                 <NewProject/>
             </ModalLeft>
-            <ModalCenter show title='Add new Customer'>
+            <ModalCenter title='Add new Customer'>
                 <UserForm/>
-            </ModalCenter>          
+            </ModalCenter>    
+            <ModalCenter title = 'Add new User'>
+                <NewUserForm/>
+            </ModalCenter>      
         </>
 
 

@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/header-component/header';
+import StationPage from './pages/station';
 import ProjectPage from './pages/project';
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <>
       <Header/>
       <main>
-          <ProjectPage/>
+          {/* <ProjectPage/> */}
+          <StationPage/>
       </main>
     </>
     

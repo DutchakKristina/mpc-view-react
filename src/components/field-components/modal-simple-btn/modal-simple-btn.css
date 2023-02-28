@@ -1,0 +1,56 @@
+.simple_btn_wrap .show_modal{
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--second_color);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+}
+.simple_btn_wrap .show_modal:hover{
+    color: var(--main_color)
+}
+.simple_btn_wrap .show_modal:hover .btn_icon:after,
+.simple_btn_wrap .show_modal:hover .btn_icon:before{
+    background: var(--main_color);
+}
+.simple_btn_wrap .show_modal .btn_icon{
+    width: 9px;
+    height: 9px;
+    position: relative;
+    display: block;
+    margin-left: 5px;
+}
+.simple_btn_wrap .show_modal .btn_icon:after,
+.simple_btn_wrap .show_modal .btn_icon:before{
+    content : "";
+    position: absolute;
+    background: var(--second_color);  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+}
+.simple_btn_wrap .show_modal .btn_icon:after{
+    width: 100%;
+    height: 2px;
+}
+.simple_btn_wrap .show_modal .btn_icon:before{
+   height: 100%;
+   width: 2px;
+}
+.simple_btn_wrap{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+@media(max-width: 600px){
+    .simple_btn_wrap{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

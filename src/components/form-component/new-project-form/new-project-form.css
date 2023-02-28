@@ -1,0 +1,43 @@
+.new_proj_form .flex_field{
+    display: flex;
+    gap: 25px 15px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-bottom: 1px solid  #D4DBF1;
+}
+.new_proj_form .flex_field > div{
+    width: calc(50% - 8px);
+}
+.new_proj_form .new_user_projects{
+    padding: 20px 0;    
+}
+.new_proj_form .user_projects_wrap{
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: column;
+    gap: 15px;
+}
+.new_proj_form .user_project_inner{
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+.new_proj_form .select_wrapper{
+    width: calc(100% - 65px);
+}
+.new_proj_form .select_wrapper select{
+    font-weight: 400;
+}
+@media(max-width: 767px){
+    .new_proj_form .flex_field > div{
+        width: 100%;
+    }
+    .new_proj_form .flex_field{
+        gap: 15px;
+    }
+}
+@media(max-width: 600px){
+    .new_proj_form .select_wrapper{
+        width: 100%;
+    }
+}
