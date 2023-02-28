@@ -1,9 +1,16 @@
 import './App.css';
+import Header from './components/header-component/header';
 import ProjectPage from './pages/project';
 
 function App() {
   return (
-    <ProjectPage/>
+    <>
+      <Header/>
+      <main>
+          <ProjectPage/>
+      </main>
+    </>
+    
   );
 }
 

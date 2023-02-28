@@ -1,0 +1,10 @@
+.new_user_form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.new_user_form .new_user_fields{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}

@@ -27,15 +27,12 @@
     font-size: 24px;
     text-align: center;
 }
-.modal_center .modal_fields{
-    padding: 30px 0;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
 .modal_center .main_button{
     margin: 0 auto;
 }
 .modal_center select{
     font-weight: 400;
 }
+.modal_center .new_user_form{
+    padding-top: 30px;
+}   

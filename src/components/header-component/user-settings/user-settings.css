@@ -1,0 +1,89 @@
+.user_wrapper .user_name_wrap{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 25px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+.user_wrapper .user_name_wrap:hover{
+    opacity: 1;
+}
+.user_wrapper{
+    display: flex; 
+    align-items: center;
+    column-gap: 15px;
+    position: relative;
+    z-index: 5;
+}
+.user_wrapper h3{
+    color: #F2F7FE;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;   
+}
+.user_wrapper .name_icon{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.user_wrapper .name_icon svg{
+    transform: rotate(180deg);
+}
+
+.user_wrapper .iconAnime{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.user_wrapper .iconAnime span{
+    height: 3px;
+    width: 100%;
+    background: #48FFA8;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+}
+.user_wrapper .iconAnime span:last-child {
+    width: 21px;
+    bottom: 0;
+}
+.user_wrapper .user_settings{
+    display: none;
+    position: absolute;
+    width: calc(100% - 40px);
+    background: var(--main_color);
+    padding: 10px;
+    padding-top: 20px;
+    top: calc(100% - 10px);
+    right: -30px;
+    border-radius: 0 0 10px 10px;
+    z-index: -1;
+    min-width: 160px;
+}
+.user_wrapper .user_settings_link{
+    padding: 10px 0;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 400;
+    display: block;
+    transition: 0.2s;
+}
+.user_wrapper .user_settings_link:hover{
+    opacity: 1;
+}
+.user_wrapper .user_settings_icon img{
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+.user_wrapper .user_logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #1C2953;
+}

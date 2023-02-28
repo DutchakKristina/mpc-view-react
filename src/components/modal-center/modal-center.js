@@ -21,7 +21,7 @@ const ModalCenter = ( props ) => {
                         <img src={iconCloseModal} alt="close modal"/>
                     </div>
                     <h2 className="modal_title">{props.title}</h2>
-                        {props.children}
+                    {props.children}
                 </div>
             </div>
         </div>
