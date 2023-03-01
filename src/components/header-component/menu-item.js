@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 const MenuItem = ({title, url, img}) => {
     return(
@@ -6,5 +7,8 @@ const MenuItem = ({title, url, img}) => {
         
     )
 }
-
+MenuItem.propTypes = {
+    title: PropTypes.oneOfType([ PropTypes.string, PropTypes.number,]),
+    url: PropTypes.string
+}
 export default MenuItem;

@@ -3,7 +3,6 @@ import Button from "../components/field-components/button/button";
 import Filter from "../components/filter/filter";
 import ModalLeft from "../components/modal-left/modal-left";
 
-import ProjectTable from "../components/table-components/project-table/project-table";
 
 import mainButtonIcon from '../images/icon_plus.svg';
 import '../custom-css/home.css';
@@ -13,10 +12,19 @@ import UserForm from "../components/form-component/new-customer-form/new-custome
 import NewUserForm from "../components/form-component/new-user-form/new-user-form";
 import Select from "../components/field-components/select/select";
 import ButtonReset from "../components/field-components/button-reset/button-reset";
+import Table from "../components/table-components/table/table";
+import ProjectRow from "../components/table-components/project-row/project-row";
+
+const newData = [
+    { id: 1, name: "Noord Aa Project", country: "Netherlands", customer: "Adams Contracting LLC", status: "active" },
+    { id: 2, name: "Rio Guandu", country: "Brazil", customer: "Adams Contracting LLC", status: "inactive"  },
+    { id: 3, name: "Rio Guandu", country: "Brazil", customer: "Adams Contracting LLC", status: "active" },
+  ];
+const columns = ['Name', 'country', 'customer', 'status'];
 
 const ProjectPage = () => {
     return (
-        <>
+        <> 
             <section className="section_title">
                 <div className="title_container">
                     <h1 className="page_title">Projects(112)</h1>
@@ -40,7 +48,7 @@ const ProjectPage = () => {
                 </Filter>
             </section>
             <section className="section_table">
-                <ProjectTable/>
+              <Table RowComponent={ProjectRow} data={newData} columns = {columns}/>
             </section>
             <ModalLeft title = "Add new Project">
                 <NewProject/>

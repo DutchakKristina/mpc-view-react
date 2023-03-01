@@ -1,0 +1,91 @@
+.table{
+    background: #FFFFFF;
+    border: 1px solid #D4DBF1;
+    border-radius: 10px;
+    overflow: auto;
+}
+.table .status{
+    margin: 0;
+    position: relative;
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+.table .row{
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 70px;
+    position: relative;
+    gap: 10px;
+    transition: 0.2s;
+}
+.table .row:hover{
+    background: #F2F7FE;
+}
+.table .row:not(:last-child){
+    border-bottom: 1px solid #D4DBF1;
+}
+.table .status .status_icon{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 0;
+    top: 50%; 
+    transform: translate(0, -50%);
+}
+.table .status.active .status_icon{
+    background: #00CA14;
+}
+.table .status.inactive .status_icon{
+    background: #E52900;
+}
+.table a{
+    color: var(--second_color);
+    font-weight: 700;
+    font-size: 14px;    
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 2px;
+}
+.table a:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: -100%;
+    bottom: 0px;
+    background: var(--second_color);
+    transition: 0.2s;
+}
+.table a:hover:after{
+    left: 0;
+}
+.table .table_inner{
+    min-width: 1500px;
+}
+.table_pagination{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.table .proj_option{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: calc(50% - 5px);
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+.table .proj_option img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.2s;
+    filter: grayscale(100);
+}
+.table .proj_option:hover img{
+    filter: grayscale(0);
+}

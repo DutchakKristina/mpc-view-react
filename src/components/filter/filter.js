@@ -1,5 +1,6 @@
 import React from "react";
 import Search from "../field-components/search/search";
+import PropTypes from 'prop-types';
 
 import './filter.css';
 

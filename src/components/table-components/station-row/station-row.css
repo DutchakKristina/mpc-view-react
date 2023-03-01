@@ -1,0 +1,47 @@
+.station_row{
+    display: grid;
+    grid-template-columns: repeat(8 , 1fr) 0.4fr;
+}
+.cell_button{
+    background: #F2F7FE;
+    outline: none;
+    border: none;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cell_button:hover img{
+    filter: grayscale(65%);
+}
+.cell_button img{
+    width: 16px;
+    height: 12px;
+    object-fit: contain;
+    transition: .2s;
+}
+.details{
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #F2F7FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 25px;
+    cursor: pointer;
+}
+.details span{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #6C6C6C;
+}

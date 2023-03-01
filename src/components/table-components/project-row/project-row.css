@@ -1,0 +1,13 @@
+
+
+.project_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    position: relative;
+} 
+.edit_project{
+    left: 25px;
+}
+.delete_project{
+    right: 25px;
+}

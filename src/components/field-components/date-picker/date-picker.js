@@ -1,7 +1,10 @@
 import React from "react";
+import PropTypes from 'prop-types';
+
 
 import DatePickerIcon from '../../../images/icon_date_picker.svg'
 import './date-picker.css';
+
 const DatePicker = ({label}) => {
     return(
         <div className="date_picker_wrap">
@@ -12,5 +15,10 @@ const DatePicker = ({label}) => {
         </div>
     )
 }
-
+DatePicker.propTypes = {
+    label:PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.number
+        ]),
+}
 export default DatePicker;

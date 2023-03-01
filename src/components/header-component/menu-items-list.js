@@ -1,5 +1,6 @@
 import React from "react";
 import MenuItem from "./menu-item";
+import PropTypes from 'prop-types';
 
 const MenuItemsList = ({list}) => {
     return(
@@ -12,5 +13,7 @@ const MenuItemsList = ({list}) => {
         </nav>
     )
 }
-
+MenuItemsList.propTypes = {
+    list:PropTypes.array
+}
 export default MenuItemsList;

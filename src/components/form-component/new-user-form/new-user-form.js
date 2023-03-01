@@ -6,7 +6,8 @@ import Select from "../../field-components/select/select";
 
 
 import ButtonIcon from '../../../images/save_icon.svg'
-import './new-user-form.css'
+import './new-user-form.css';
+
 const NewUserForm = () => {
     return(
         <div className="new-user-form">

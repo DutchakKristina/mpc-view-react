@@ -3,11 +3,21 @@ import ButtonReset from "../components/field-components/button-reset/button-rese
 import Button from "../components/field-components/button/button";
 import Select from "../components/field-components/select/select";
 import Filter from "../components/filter/filter";
+import StationRow from "../components/table-components/station-row/station-row";
+import Table from "../components/table-components/table/table";
 
 import mainButtonIcon from '../images/icon_plus.svg';
 
+const usersData = [
+    { id: 1, station: "Pro - 22E", project: 'Noord Aa Project', country: "Netherlands", customer: "Adams Contracting LLC", type: "Trios Station (Pro)", health:"Proper communication", 'last_reported':"2023-02-09 22:30:00", status: "active" },
+    { id: 2, station: "Pro - 23E", project: 'Brazil', country: "Netherlands", customer: "Adams Contracting LLC",type: "Trios Station (Pro)", health:"Proper communication", 'last_reported':"2023-02-09 22:30:00", status: "inactive"  },
+    { id: 3, station: "Pro - 24E", project: 'Rio Guandu', country: "Netherlands", customer: "Adams Contracting LLC", type: "Trios Station (Pro)", health:"Proper communication", 'last_reported':"2023-02-09 22:30:00", status: "active" },
+  ];
+
+const columns = ['station', 'project', 'Country', 'Customer', 'type', 'Health', 'last reported', 'Status'];
+
 const StationPage = () => {
-    return (
+    return ( 
         <>
             <section className="section_title">
                 <div className="title_container">
@@ -31,6 +41,9 @@ const StationPage = () => {
                         </Button>
                     </div>
                 </Filter>
+            </section>
+            <section className="section_table">
+               <Table RowComponent={StationRow} data={usersData} columns = {columns} type='large'/>
             </section>
         </>
 

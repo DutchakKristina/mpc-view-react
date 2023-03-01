@@ -11,7 +11,7 @@ const styled = {
 const Button = ( {children, type = 'primary', handler, preventDefault= true} ) => {
     const buttonClick = (e) => {
         if(preventDefault){
-            e.preventDefault();
+            e.preventDefault(); 
         }
         handler(e);
     }
