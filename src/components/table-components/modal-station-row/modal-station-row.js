@@ -2,13 +2,12 @@ import React from "react";
 
 import './modal-station-row.css';
 
-const ModalStationRow = ({data}) => {
-    return(
+const ModalStationRow = ({ data }) => {
+    return (
         <div className="modal_station_row row">
-            <div className="edit_project proj_option">
-               
+            <div>
+                <label for={data.id} className="checkbox_wrap"><span class="checker"></span><input type="checkbox" id={data.id} />{data.parameter}</label>
             </div>
-            <div><a href="#s">{data.parameter}</a></div>
             <div>{data.alias}</div>
             <div>{data.register_address}</div>
             <div>{data.register_size}</div>

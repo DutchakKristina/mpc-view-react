@@ -3,3 +3,38 @@
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 15px;
 }
+.checkbox_wrap{
+    position: relative;
+}
+.checker{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #008BC6;
+    border-radius: 3px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: -25px;
+}
+.checkbox_wrap input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checker:after{
+    content: "";
+    left: 50%;
+    top: calc(50% - 1px);
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    position: absolute;
+    /* display: none; */
+}
+.checkbox_wrap input:checked ~ .checker:after {
+    /* display: block; */
+  }
