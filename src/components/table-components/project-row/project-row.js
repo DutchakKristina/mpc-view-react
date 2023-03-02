@@ -1,8 +1,10 @@
 import classNames from "classnames";
 import React from "react";
+import PropTypes from 'prop-types'; 
 
 import IconEdit from '../../../images/icon_edit.svg';
 import IconDelete from '../../../images/icon_trash.svg';
+
 import './project-row.css';
 
 const ProjectRow = ({ data }) => {
@@ -23,5 +25,7 @@ const ProjectRow = ({ data }) => {
     )
 }
 
- 
+ProjectRow.propTypes = {
+    data: PropTypes.array.isRequired
+}
 export default ProjectRow;

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import classNames from "classnames";
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'; 
 import { useState } from "react";
 
 import './select.css';

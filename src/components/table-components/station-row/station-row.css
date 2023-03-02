@@ -1,8 +1,9 @@
 .station_row{
     display: grid;
     grid-template-columns: repeat(8 , 1fr) 0.4fr;
+    cursor: default;
 }
-.cell_button{
+.station_row .cell_button{
     background: #F2F7FE;
     outline: none;
     border: none;
@@ -14,16 +15,16 @@
     justify-content: center;
     cursor: pointer;
 }
-.cell_button:hover img{
+.station_row .cell_button:hover img{
     filter: grayscale(65%);
 }
-.cell_button img{
+.station_row .cell_button img{
     width: 16px;
     height: 12px;
     object-fit: contain;
     transition: .2s;
 }
-.details{
+.station_row .details{
     width: 43px;
     height: 43px;
     border-radius: 50%;
@@ -39,9 +40,15 @@
     right: 25px;
     cursor: pointer;
 }
-.details span{
+.station_row .details span{
     width: 5px;
     height: 5px;
     border-radius: 50%;
     background: #6C6C6C;
+}
+.station_row .health_wrapper{
+    transition: .2s;
+}
+.station_row .health_wrapper:hover{
+    color: #E52900;
 }

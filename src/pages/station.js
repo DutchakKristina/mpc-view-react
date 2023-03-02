@@ -3,6 +3,8 @@ import ButtonReset from "../components/field-components/button-reset/button-rese
 import Button from "../components/field-components/button/button";
 import Select from "../components/field-components/select/select";
 import Filter from "../components/filter/filter";
+import NewStationForm from "../components/form-component/new-station-form/new-station-form";
+import ModalCenter from "../components/modal-center/modal-center";
 import StationRow from "../components/table-components/station-row/station-row";
 import Table from "../components/table-components/table/table";
 
@@ -43,8 +45,11 @@ const StationPage = () => {
                 </Filter>
             </section>
             <section className="section_table">
-               <Table RowComponent={StationRow} data={usersData} columns = {columns} type='large'/>
+               <Table RowComponent={StationRow} data={usersData} columns = {columns} size='large'/>
             </section>
+            <ModalCenter show title="Add new Station" size="big">
+                <NewStationForm/>
+            </ModalCenter>
         </>
 
     )

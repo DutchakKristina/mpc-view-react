@@ -1,12 +1,12 @@
 .header_row{
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 15px;
     padding: 25px 70px;
     background: #D4DBF1;
     border-radius: 10px 10px 0px 0px;
 }
 .header_row.large{
-    grid-template-columns:  repeat(8, 1fr) 0.3fr;
+    grid-template-columns:  repeat(8, 1fr) 0.4fr;
 }
 .header_row.regular{
     grid-template-columns: 1fr 1fr 1fr 0.5fr;

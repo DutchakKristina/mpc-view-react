@@ -6,12 +6,12 @@ import TableHeader from "../table-header/table-header";
 import "./table.css";
 
 
-const Table = ({ data, RowComponent, columns, type}) => {
+const Table = ({ data, RowComponent, columns, size}) => {
     return (
         <>
         <div className="table">
             <div className="table_inner">
-                <TableHeader type={type} columns={columns}></TableHeader>
+                <TableHeader size={size} columns={columns}></TableHeader>
                 {data.map((row) => (
                     <RowComponent key={row.id} data={row} />
                 ))}

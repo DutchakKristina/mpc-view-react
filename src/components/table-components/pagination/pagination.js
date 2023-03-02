@@ -1,7 +1,8 @@
 import React from "react";
 import './pagination.css'
 
-import arrow from '../../../images/arrow_down.svg'
+import arrow from '../../../images/arrow_down.svg';
+
 const Pagination = () => {
     return (
         <div className="pagination_wrapper">
