@@ -47,7 +47,7 @@ const ProjectPage = () => {
                     </div>
                 </Filter>
             </section>
-            <section className="section_table">
+            <section className="section_table project_table">
               <Table RowComponent={ProjectRow} data={newData} columns = {columns}/>
             </section>
             <ModalLeft title = "Add new Project">

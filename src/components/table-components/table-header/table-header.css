@@ -5,12 +5,6 @@
     background: #D4DBF1;
     border-radius: 10px 10px 0px 0px;
 }
-.header_row.large{
-    grid-template-columns:  repeat(8, 1fr) 0.4fr;
-}
-.header_row.regular{
-    grid-template-columns: 1fr 1fr 1fr 0.5fr;
-}
 .tableCell{
     text-transform: uppercase;
     font-size: 14px;

@@ -1,3 +1,25 @@
+
+.new_station_form{
+    height: 100%;
+}
+.new_station_wrapper{
+    max-height: calc(100% - 60px);
+    overflow: auto;
+    padding-right: 15px;
+}
+.new_station_wrapper::-webkit-scrollbar-track{
+	background-color: #D4DBF1;
+    border-radius: 10px;
+}
+.new_station_wrapper::-webkit-scrollbar{
+	width: 5px;
+	background-color: #D4DBF1;
+    border-radius: 10px;
+}
+.new_station_wrapper::-webkit-scrollbar-thumb{
+	background-color: #031240;
+    border-radius: 10px;
+}
 .new_station_form .form_sub_title{
     margin: 0;
     color: var(--main_color);
@@ -70,4 +92,13 @@
 }
 .new_station_form .data_min_max .input_box{
     flex-direction: row-reverse;
+}
+.new_station_form .header_row{
+    grid-template-columns: repeat(6, 1fr);
+}
+.new_station_table{
+    margin-top: 30px;
+}
+.new_station_btn{
+    margin: 30px;
 }

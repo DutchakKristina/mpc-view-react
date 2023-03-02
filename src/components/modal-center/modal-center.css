@@ -25,7 +25,9 @@
     width: 730px;
 }
 .modal_center .modal_inner.big{
-    width: calc(100% - 60px);
+    width: calc(100% - 80px);
+   height: calc(100% - 80px);
+   padding: 20px 15px 40px 30px;
 }
 .modal_center .modal_title{
     margin:  0 0 30px;
@@ -35,7 +37,7 @@
 .modal_center .main_button{
     margin: 0 auto;
 }
-.modal_center select{
+.modal_center .select_wrapper select{
     font-weight: 400;
 }
 .modal_center .new_user_form{

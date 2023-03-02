@@ -44,7 +44,7 @@ const StationPage = () => {
                     </div>
                 </Filter>
             </section>
-            <section className="section_table">
+            <section className="section_table station_table">
                <Table RowComponent={StationRow} data={usersData} columns = {columns} size='large'/>
             </section>
             <ModalCenter show title="Add new Station" size="big">

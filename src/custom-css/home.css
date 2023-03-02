@@ -9,7 +9,12 @@
 .section_filter{
     margin-top: 30px;
 }
-
+.station_table .header_row{
+    grid-template-columns:  repeat(8, 1fr) 0.4fr;
+}
+.project_table .header_row{
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+}
 @media(max-width: 767px){
     .title_container{
         gap: 20px;

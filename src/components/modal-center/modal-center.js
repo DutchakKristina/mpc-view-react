@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React from "react";
-
+import PropTypes from 'prop-types'; 
 
 import iconCloseModal from '../../images/icon_close_modal.svg';
 import './modal-center.css';
@@ -29,4 +29,10 @@ const ModalCenter = (  {show ,title, children,  size = "regular"}) => {
     )
 }
 
+ModalCenter.propTypes = {
+    size: PropTypes.oneOf(['regular', 'big']),
+    show: PropTypes.bool,
+    title: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    children: PropTypes.any
+}
 export default ModalCenter;

@@ -1,9 +1,22 @@
 import React from "react";
+import Button from "../../field-components/button/button";
 import Input from "../../field-components/input/input";
 import Select from "../../field-components/select/select";
 import Textarea from "../../field-components/textarea/textarea"
 
+
+import '../../../custom-css/home.css';
 import './new-station-form.css';
+import Table from "../../table-components/table/table";
+import ModalStationRow from "../../table-components/modal-station-row/modal-station-row";
+
+
+const newData = [
+    { id: 1, parameter: "Battery 12 (volts)", alias: "Battery 12V", register_address: "20008", register_size: "2", register_type: "2", data_type: "Float" },
+    { id: 2, parameter: "Chlorophyll-a (μg/L)", alias: "Battery 24V", register_address: "20007", register_size: "2", register_type: "2", data_type: "Unsigned Int" },
+    { id: 3, parameter: "DO mg/l (mg/L)", alias: "GSM", register_address: "20040", register_size: "1", register_type: "2", data_type: "Float" },
+  ];
+const columns = ['parameter', 'alias', 'Register Address', 'Register Size', 'Register Type', 'Data Type'];
 
 const NewStationForm = () => {
     return (
@@ -44,16 +57,24 @@ const NewStationForm = () => {
                 <div className="inner_fields">
                     <div className="left_side">
                         <Select label="Project *" size="large" options={[{ value: 'Select project', id: 4 }, { value: 'test2', id: 1 }]} selectedValue='Choose Project Status' />
-                        <Select size="large" label="Country *" options={[{ value: 'Select country', id: 4 }, { value: 'test2', id: 1 }]} selectedValue='Choose status' />
+                        <Select size="large" label="alias *" options={[{ value: 'Select alias', id: 4 }, { value: 'test2', id: 1 }]} selectedValue='Choose status' />
                     </div>
                     <div className="right_side">
                         <Select size="large" label="Customer *" options={[{ value: 'Pick customer', id: 4 }, { value: 'test2', id: 1 }]} selectedValue='Pick customer' />
                     </div>
                 </div>
                 <h3 className="form_sub_title">Station Parameters<span>(Section available only on existing stations. Please save the new stations first!)
-                </span></h3>
+                </span></h3>          
+                <div className="new_station_table">     
+                    <Table RowComponent={ModalStationRow} data={newData} columns = {columns}></Table>
+                </div>
+                <div className="new_station_btn">
+                    <Button>
+                        Update Station
+                    </Button>
+                </div>
             </div>
-        </div>
+        </div> 
     )
 }
 
