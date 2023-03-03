@@ -7,7 +7,7 @@ import './modal-center.css';
 
 const styled = {
     regular:'regular',
-    big: 'big'
+    big: 'big' 
 }
 
 const ModalCenter = (  {show ,title, children,  size = "regular", close}) => {
@@ -19,7 +19,7 @@ const ModalCenter = (  {show ,title, children,  size = "regular", close}) => {
         <div className="modal_center">
             <div className="modal_flex">
                 <div className = {classNames("modal_inner", styled[size])}>
-                    <div className="modal_close" onClick={close}>
+                    <div className="modal_close">
                         <img src={iconCloseModal} alt="close modal"/>
                     </div>
                     <h2 className="modal_title">{title}</h2>

@@ -9,7 +9,8 @@ import SaveIcon from "../../../images/save_icon.svg";
 import ModalSimpleBtn from "../../field-components/modal-simple-btn/modal-simple-btn";
 import SingleField from "./new-project-single-field";
 
-import "./new-project-form.css"
+import "./new-project-form.css"; 
+
 const NewProject = () => {
     return (
         <div className="new_proj_form">
