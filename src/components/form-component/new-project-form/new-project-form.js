@@ -15,8 +15,8 @@ const NewProject = () => {
         <div className="new_proj_form">
             <div className="flex_field">
                 <Input label="Project Name" type="text"/>
-                <Select label="Project Status:" size="large" options={[{value: 'Choose Project Status', id: 4}, {value: 'test2', id: 1}]} selectedValue='Choose Project Status'></Select>
-                <Select label="Select a Country:" size="large" options={[{value: 'Pick a Country', id: 4}, {value: 'test2', id: 1}]} selectedValue='Pick a Country'></Select>
+                <Select label="Project Status:" size="large" options={[{value: 'Choose Project Status', id: 8}, {value: 'test2', id: 1}]} selectedValue='Choose Project Status'></Select>
+                <Select label="Select a Country:" size="large" options={[{value: 'Pick a Country', id: 3}, {value: 'test2', id: 5}]} selectedValue='Pick a Country'></Select>
                 <Select label= { <ModalSimpleBtn label = "Select a Customer:" actionTitle="Add New Customer"/> } size="large"  selectedValue = "Pick a Customer" options={[{value: 'Pick a Customer'}]}></Select>
             </div>
             <div className="new_user_projects">

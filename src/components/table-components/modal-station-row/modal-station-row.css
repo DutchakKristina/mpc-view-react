@@ -38,3 +38,6 @@
 .checkbox_wrap input:checked ~ .checker:after {
     display: block;
   }
+  .modal_station_row:nth-child(odd){
+    background-color: #F2F7FE;
+  }

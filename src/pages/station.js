@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ButtonReset from "../components/field-components/button-reset/button-reset";
 import Button from "../components/field-components/button/button";
 import Select from "../components/field-components/select/select";
@@ -14,6 +14,9 @@ const usersData = [
     { id: 1, station: "Pro - 22E", project: 'Noord Aa Project', country: "Netherlands", customer: "Adams Contracting LLC", type: "Trios Station (Pro)", health:"Proper communication", 'last_reported':"2023-02-09 22:30:00", status: "active" },
     { id: 2, station: "Pro - 23E", project: 'Brazil', country: "Netherlands", customer: "Adams Contracting LLC",type: "Trios Station (Pro)", health:"Proper communication", 'last_reported':"2023-02-09 22:30:00", status: "inactive"  },
     { id: 3, station: "Pro - 24E", project: 'Rio Guandu', country: "Netherlands", customer: "Adams Contracting LLC", type: "Trios Station (Pro)", health:"Proper communication", 'last_reported':"2023-02-09 22:30:00", status: "active" },
+    { id: 4, station: "Pro - 24E", project: 'Rio Guandu', country: "Netherlands", customer: "Adams Contracting LLC", type: "Trios Station (Pro)", health:"Proper communication", 'last_reported':"2023-02-09 22:30:00", status: "inactive" },
+    { id: 5, station: "Pro - 24E", project: 'Rio Guandu', country: "Netherlands", customer: "Adams Contracting LLC", type: "Trios Station (Pro)", health:"Proper communication", 'last_reported':"2023-02-09 22:30:00", status: "active" },
+    { id: 6, station: "Pro - 24E", project: 'Rio Guandu', country: "Netherlands", customer: "Adams Contracting LLC", type: "Trios Station (Pro)", health:"Proper communication", 'last_reported':"2023-02-09 22:30:00", status: "active" },
   ];
 
 const columns = ['station', 'project', 'Country', 'Customer', 'type', 'Health', 'last reported', 'Status'];
@@ -47,7 +50,7 @@ const StationPage = () => {
             <section className="section_table station_table">
                <Table RowComponent={StationRow} data={usersData} columns = {columns} size='large'/>
             </section>
-            <ModalCenter show title="Add new Station" size="big">
+            <ModalCenter title="Add new Station" size="big">
                 <NewStationForm/>
             </ModalCenter>
         </>

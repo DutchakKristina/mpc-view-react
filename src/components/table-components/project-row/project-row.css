@@ -5,9 +5,9 @@
     grid-template-columns: 1fr 1fr 1fr 0.5fr;
     position: relative;
 } 
-.edit_project{
+.project_row  .edit_project{
     left: 25px;
 }
-.delete_project{
+.project_row  .delete_project{
     right: 25px;
 }

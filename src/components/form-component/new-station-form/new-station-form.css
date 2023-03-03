@@ -102,3 +102,49 @@
 .new_station_btn{
     margin: 30px;
 }
+
+@media(max-width: 1350px){
+    .new_station_form .inner_fields{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .new_station_form .inner_fields > div{
+        width: 100%;
+    }
+}
+@media(max-width: 767px){
+    .new_station_form .left_side{
+        gap: 20px;
+    }
+    .new_station_form .inputs_wrapper,
+    .new_station_form .data_acquisition_wrapper{
+        gap: 15px;
+        flex-direction: column;
+    }
+    .new_station_form .inner_fields{
+        padding: 20px 0;
+    }
+    .new_station_form .inputs_wrapper > div,
+    .new_station_form .data_acquisition_wrapper > div{
+        width: 100%;
+    }
+    .new_station_form .inner_fields{
+        gap: 15px;
+    }
+    .new_station_table{
+        margin-top: 20px;
+    }
+}
+@media(max-width: 600px){
+    .new_station_form .data_min_max_inner{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .new_station_form .data_min_max_inner > div{
+        width: 100%;
+    }
+    .new_station_form .left_side{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}

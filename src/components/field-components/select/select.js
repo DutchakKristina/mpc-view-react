@@ -36,7 +36,6 @@ const Select = ({ size = 'regular', label, type = 'top', options = [], selectedV
 }
 Select.propTypes = {
     type: PropTypes.oneOf(['top', 'left', 'small', 'regular', 'large']),
-    selectedValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    label: PropTypes.oneOf([PropTypes.string, PropTypes.number])
+    selectedValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 export default Select;

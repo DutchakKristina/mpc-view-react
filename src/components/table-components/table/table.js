@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+
+
 import NumberOfRecords from "../number-of-records";
 import Pagination from "../pagination/pagination";
 import TableHeader from "../table-header/table-header";
@@ -8,6 +10,7 @@ import "./table.css";
 
 
 const Table = ({ data, RowComponent, columns}) => {
+    const [showPagination, setShowPagination] = useState(true);
     return (
         <>
         <div className="table">
@@ -18,17 +21,19 @@ const Table = ({ data, RowComponent, columns}) => {
                 ))}
              </div>
         </div>
-        <div className="table_pagination">
+        {data.length > 5 && showPagination && (
+            <div className="table_pagination">
             <Pagination/>            
             <NumberOfRecords totalProj="120" startNum="15" endNum="25"/>
         </div>
+      )}
+        
         </>
     )
   
 }
 
 Table.propTypes = {
-    RowComponent: PropTypes.element,
     data: PropTypes.any,
     columns: PropTypes.any
 }

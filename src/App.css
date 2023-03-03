@@ -135,7 +135,7 @@ h3{
   font-size: 14px;
   color: #808AAB;
 }
-@media(max-width: 1199px){
+@media(max-width: 1440px){
   .filters_buttons{
     width: 100%;
     justify-content: center;

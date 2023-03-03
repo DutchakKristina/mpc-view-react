@@ -4,6 +4,7 @@ import Input from "../../field-components/input/input";
 import Select from "../../field-components/select/select";
 import Textarea from "../../field-components/textarea/textarea"
 
+import SaveIcon from "../../../images/save_icon.svg";
 
 import '../../../custom-css/home.css';
 import './new-station-form.css';
@@ -27,12 +28,12 @@ const NewStationForm = () => {
                     <div className="left_side">
                         <Input type="text" label="Station name *" />
                         <Input type="text" label="Serial Number (5 digits, used for MQTT, data intake & Winch/Depth data)" />
-                        <Select label="Device Type *" size="large" options={[{ value: 'Choose device type', id: 4 }, { value: 'test2', id: 1 }]} selectedValue='Choose Project Status' />
-                        <Select size="large" label="Status *" options={[{ value: 'Choose status', id: 4 }, { value: 'test2', id: 1 }]} selectedValue='Choose status' />
+                        <Select label="Device Type *" size="large" options={[{ value: 'Choose device type', id: 42 }, { value: 'test2', id: 24 }]} selectedValue='Choose device type' />
+                        <Select size="large" label="Status *" options={[{ value: 'Choose status', id: 44 }, { value: 'test2', id: 1 }]} selectedValue='Choose status' />
                         <Input type="text" label="Latitude *" />
                         <Input type="text" label="Longitude *" />
                         <Input type="text" label="SIM Subscriber ID # (ICCID used for Pod System's API)" />
-                        <Select size="large" label="Station Connection Protocol *" options={[{ value: 'Choose Project Status', id: 4 }, { value: 'test2', id: 1 }]} selectedValue='Choose Project Status' />
+                        <Select size="large" label="Station Connection Protocol *" options={[{ value: 'Choose Project Status', id: 18 }, { value: 'test2', id: 3 }]} selectedValue='Choose Project Status' />
                     </div>
                     <div className="right_side">
                         <div className="inputs_wrapper">
@@ -41,12 +42,12 @@ const NewStationForm = () => {
                             <Input type="text" label="MODBUS Slave ID *" />
                         </div>
                         <div className="data_acquisition_wrapper">
-                            <Select size="large" label="Data Acquisition *" options={[{ value: 'Choose device type', id: 4 }, { value: 'test2', id: 1 }]} selectedValue='Choose Project Status' />
+                            <Select size="large" label="Data Acquisition *" options={[{ value: 'Active', id: 7 }, { value: 'test2', id: 14 }]} selectedValue='Active' />
                             <div className="data_min_max">
                                 <label className="custom_label">Data Acquisition Details (sampling rate - minutes & priority) *</label>
                                 <div className="data_min_max_inner">
                                     <Input label="min" position="left" type="text" />
-                                    <Select size="large" options={[{ value: 'Priority 1', id: 4 }, { value: 'test2', id: 1 }]} selectedValue='Priority 1' />
+                                    <Select size="large" options={[{ value: 'Priority 1', id: 8 }, { value: 'test2', id: 5 }]} selectedValue='Priority 1' />
                                 </div>
                             </div>
                         </div>
@@ -71,6 +72,7 @@ const NewStationForm = () => {
                 <div className="new_station_btn">
                     <Button>
                         Update Station
+                        <img src={SaveIcon} alt="save"/>
                     </Button>
                 </div>
             </div>

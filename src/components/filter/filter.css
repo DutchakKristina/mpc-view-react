@@ -18,7 +18,7 @@
     max-width: 270px;
     width: 100%;
   }
-  @media(max-width:1440px){
+  @media(max-width:1640px){
     .filter .filter_inner{
       flex-direction: column;
       align-items: start;
@@ -33,12 +33,11 @@
       border-bottom: 1px solid #D4DBF1;
     }
   }
-  @media(max-width: 1199px){
+  @media(max-width: 1440px){
     .filter .filters_wrapper{
       flex-wrap: wrap;
       row-gap: 15px;
     }
-
     .filter_title{
       width: 100%;
     }

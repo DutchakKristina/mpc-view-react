@@ -18,7 +18,10 @@ import ProjectRow from "../components/table-components/project-row/project-row";
 const newData = [
     { id: 1, name: "Noord Aa Project", country: "Netherlands", customer: "Adams Contracting LLC", status: "active" },
     { id: 2, name: "Rio Guandu", country: "Brazil", customer: "Adams Contracting LLC", status: "inactive"  },
-    { id: 3, name: "Rio Guandu", country: "Brazil", customer: "Adams Contracting LLC", status: "active" },
+    { id: 3, name: "Noord Aa Project", country: "Netherlands", customer: "Adams Contracting LLC", status: "active" },
+    { id: 4, name: "Rio Guandu", country: "Brazil", customer: "Adams Contracting LLC", status: "inactive" },
+    { id: 5, name: "Noord Aa Project", country: "Netherlands", customer: "Adams Contracting LLC", status: "active" },
+    { id: 6, name: "Rio Guandu", country: "Brazil", customer: "Adams Contracting LLC", status: "inactive" },
   ];
 const columns = ['Name', 'country', 'customer', 'status'];
 

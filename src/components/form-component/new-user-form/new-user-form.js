@@ -15,8 +15,8 @@ const NewUserForm = () => {
                 <Input placeholder="John Smith" label="User name:" type="text"></Input>
                 <Input type="email" placeholder="Jjohn.smith@example.com" label="Email address:"/>
                 <Input type="text" placeholder="+441234567890" label="Phone number:"/>
-                <Select size = "large" label="User type:" selectedValue="Unassignet" options={[{value: 'Unassignet', id: "4"},{value:"None", id:"4"}]}></Select>
-                <Select size = "large" label ="Customer:" selectedValue="None" options={[{value: 'None', id: "4"},{value:"Some", id:"4"}]}></Select>
+                <Select size = "large" label="User type:" selectedValue="Unassignet" options={[{value: 'Unassignet', id: "4"},{value:"None", id:"1"}]}></Select>
+                <Select size = "large" label ="Customer:" selectedValue="None" options={[{value: 'None', id: "8"},{value:"Some", id:"48"}]}></Select>
                 <Input type="password" label="Password:"/>
                 <DatePicker label="Expiration date:"/>
             </div>

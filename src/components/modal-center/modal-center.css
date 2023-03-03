@@ -45,14 +45,20 @@
 }   
 
 @media(max-width: 767px){
+    .modal_center .modal_inner.regular{
+        width: 90%;      
+    }
     .modal_center .modal_inner{
-        width: 90%;
-        padding: 15px 15px 30px;
+          padding: 15px 15px 30px;
     }
     .modal_center .new_user_form{
         padding-top: 20px;
     }
     .modal_center .modal_title{
         margin-bottom: 20px;
+    }
+     .modal_center .modal_inner.big{
+        width: 90%;
+        height: 90%;
     }
 }

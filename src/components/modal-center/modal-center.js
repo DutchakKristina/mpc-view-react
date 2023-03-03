@@ -10,7 +10,8 @@ const styled = {
     big: 'big'
 }
 
-const ModalCenter = (  {show ,title, children,  size = "regular"}) => {
+const ModalCenter = (  {show ,title, children,  size = "regular", close}) => {
+    
     if(!show){
         return null 
     }
@@ -18,7 +19,7 @@ const ModalCenter = (  {show ,title, children,  size = "regular"}) => {
         <div className="modal_center">
             <div className="modal_flex">
                 <div className = {classNames("modal_inner", styled[size])}>
-                    <div className="modal_close">
+                    <div className="modal_close" onClick={close}>
                         <img src={iconCloseModal} alt="close modal"/>
                     </div>
                     <h2 className="modal_title">{title}</h2>
