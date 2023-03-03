@@ -6,7 +6,7 @@ const ModalStationRow = ({ data }) => {
     return (
         <div className="modal_station_row row">
             <div>
-                <label for={data.id} className="checkbox_wrap"><span class="checker"></span><input type="checkbox" id={data.id} />{data.parameter}</label>
+                <label for={data.id} className="checkbox_wrap"><input type="checkbox" id={data.id} /><span class="checker"></span>{data.parameter}</label>
             </div>
             <div>{data.alias}</div>
             <div>{data.register_address}</div>
