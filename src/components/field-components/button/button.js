@@ -3,7 +3,7 @@ import classnames from "classnames";
 import PropTypes, { func } from 'prop-types';
 import './button.css';
 
-
+  
 const styled = { 
     primary: "primary",
     simple : "simple"

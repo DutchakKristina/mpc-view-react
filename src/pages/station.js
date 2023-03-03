@@ -22,12 +22,13 @@ const usersData = [
 const columns = ['station', 'project', 'Country', 'Customer', 'type', 'Health', 'last reported', 'Status'];
 
 const StationPage = () => {
+    const [showModal, setShowModal] = useState(false);
     return ( 
         <>
             <section className="section_title">
                 <div className="title_container">
                     <h1 className="page_title">Stations(356)</h1>
-                    <Button type='primary'>
+                    <Button type='primary' handler={()=> {setShowModal(true);}}>
                         Add new Project
                         <img src={mainButtonIcon} alt="button icon" />
                     </Button>
@@ -50,9 +51,11 @@ const StationPage = () => {
             <section className="section_table station_table">
                <Table RowComponent={StationRow} data={usersData} columns = {columns} size='large'/>
             </section>
-            <ModalCenter title="Add new Station" size="big">
-                <NewStationForm/>
-            </ModalCenter>
+            {showModal && (
+                <ModalCenter title="Add new Station" size="big">
+                    <NewStationForm/>
+                </ModalCenter>
+            )}
         </>
 
     )

@@ -26,13 +26,13 @@ const newData = [
 const columns = ['Name', 'country', 'customer', 'status'];
 
 const ProjectPage = () => {
-    const [showModal, setShowModal] = useState(false);
+    const [showLeftModal, setShowLeftModal] = useState(false);
     return (
         <> 
             <section className="section_title">
                 <div className="title_container">
                     <h1 className="page_title">Projects(112)</h1>
-                    <Button type='primary' handler={()=> {setShowModal(true);}}>
+                    <Button type='primary' handler={()=> {setShowLeftModal(true);}}>
                         Add new Project
                         <img src={mainButtonIcon} alt=""/>
                     </Button>
@@ -54,15 +54,18 @@ const ProjectPage = () => {
             <section className="section_table project_table">
               <Table RowComponent={ProjectRow} data={newData} columns = {columns}/>
             </section>
-            <ModalLeft  title = "Add new Project">
-                <NewProject/>
-            </ModalLeft>
-            <ModalCenter title='Add new Customer'>
+            {showLeftModal && (
+                 <ModalLeft title = "Add new Project">
+                    <NewProject/>
+                </ModalLeft>
+            )}
+          
+            {/* <ModalCenter title='Add new Customer'>
                 <UserForm/>
             </ModalCenter>    
             <ModalCenter title = 'Add new User'>
                 <NewUserForm/>
-            </ModalCenter>      
+            </ModalCenter>       */}
         </>
 
 

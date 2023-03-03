@@ -5,9 +5,7 @@ import './modal-left.css';
 
 
 const ModalLeft = ( props ) => {
-    if(!props.show){
-        return null
-    }
+   
     return (
         <div className="modal_window">
             <div className="modal_flex">
@@ -22,6 +20,6 @@ const ModalLeft = ( props ) => {
             </div>
         </div>
     )
-}
+} 
 
 export default ModalLeft;

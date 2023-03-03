@@ -12,9 +12,7 @@ const styled = {
 
 const ModalCenter = (  {show ,title, children,  size = "regular", close}) => {
     
-    if(!show){
-        return null 
-    }
+   
     return(
         <div className="modal_center">
             <div className="modal_flex">
